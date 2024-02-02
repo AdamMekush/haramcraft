@@ -5,11 +5,12 @@
 	"name": "HaramCraft",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"Slide_AM"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/project/haramcraft",
+		"sources": "https://github.com/AdamMekush/haramcraft",
+		"issues": "https://github.com/AdamMekush/haramcraft/issues"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/haramcraft/icon.png",
@@ -20,6 +21,9 @@
 		],
 		"client": [
 			"com.slide_am.HaramCraftClient"
+		],
+		"modmenu": [
+			"com.slide_am.config.ModMenuIntegration"
 		]
 	},
 	"mixins": [
