@@ -3,9 +3,10 @@
 	"id": "haramcraft",
 	"version": "${version}",
 	"name": "HaramCraft",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Strictly prohibit the use of pork!",
 	"authors": [
-		"Slide_AM"
+		"Slide_AM",
+		"cocoturtlez"
 	],
 	"contact": {
 		"homepage": "https://modrinth.com/project/haramcraft",
