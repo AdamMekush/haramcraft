@@ -7,12 +7,14 @@ import me.shedaniel.autoconfig.annotation.ConfigEntry;
 
 @Config(name = "haramcraft")
 public class ServerModConfig implements ConfigData {
+    @ConfigEntry.Gui.Tooltip
+    public boolean enableDeath = true;
 
     @ConfigEntry.Gui.Tooltip
     public boolean enableExplosion = false;
 
     @ConfigEntry.Gui.Tooltip
-    public boolean enableTeleportation = true;
+    public boolean enableTeleportation = false;
 
     @ConfigEntry.Gui.Tooltip
     public float explosionPower = 5;

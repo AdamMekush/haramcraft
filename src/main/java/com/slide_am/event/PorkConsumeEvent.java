@@ -26,10 +26,12 @@ public class PorkConsumeEvent {
                     if(player.getStackInHand(hand).getItem() == Items.PORKCHOP ||
                             player.getStackInHand(hand).getItem() == Items.COOKED_PORKCHOP
                     ){
+                        if(config.enableDeath){
+                            player.kill();
+                        }
                         if(config.enableExplosion){
                             world.createExplosion(player, player.getX(), player.getY(), player.getZ(), config.explosionPower, TNT);
                         }
-
                         if(config.enableTeleportation){
                             ServerWorld nether = player.getServer().getWorld(NETHER);
                             player.teleport(nether, player.getX(), player.getY(), player.getZ(), null, player.getYaw(), player.getPitch());

@@ -9,6 +9,9 @@ import me.shedaniel.autoconfig.annotation.ConfigEntry;
 public class ClientModConfig implements ConfigData {
 
     @ConfigEntry.Gui.Tooltip
+    public boolean enableDeath = true;
+
+    @ConfigEntry.Gui.Tooltip
     public boolean enableExplosion = false;
 
     @ConfigEntry.Gui.Tooltip
@@ -16,4 +19,6 @@ public class ClientModConfig implements ConfigData {
 
     @ConfigEntry.Gui.Tooltip
     public float explosionPower = 5;
+
+
 }
