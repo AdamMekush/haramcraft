@@ -8,7 +8,6 @@ import net.fabricmc.fabric.api.event.player.UseItemCallback;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.text.Text;
 import net.minecraft.util.TypedActionResult;
 
 import static net.minecraft.world.World.ExplosionSourceType.TNT;
