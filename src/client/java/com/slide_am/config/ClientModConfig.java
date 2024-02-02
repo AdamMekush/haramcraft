@@ -6,7 +6,7 @@ import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.autoconfig.annotation.ConfigEntry;
 
 @Config(name = "haramcraft")
-public class ModConfig implements ConfigData {
+public class ClientModConfig implements ConfigData {
 
     @ConfigEntry.Gui.Tooltip
     public boolean enableExplosion = true;
