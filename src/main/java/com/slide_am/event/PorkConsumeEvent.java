@@ -27,7 +27,6 @@ public class PorkConsumeEvent {
                     if(player.getStackInHand(hand).getItem() == Items.PORKCHOP ||
                             player.getStackInHand(hand).getItem() == Items.COOKED_PORKCHOP
                     ){
-                        player.sendMessage(Text.of(String.valueOf(config.explosionPower)));
                         if(config.enableExplosion){
                             world.createExplosion(player, player.getX(), player.getY(), player.getZ(), config.explosionPower, TNT);
                         }
