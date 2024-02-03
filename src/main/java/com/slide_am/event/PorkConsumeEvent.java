@@ -1,7 +1,7 @@
 package com.slide_am.event;
 
 
-import com.slide_am.config.ServerModConfig;
+import com.slide_am.config.ModConfig;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import net.fabricmc.fabric.api.event.player.UseItemCallback;
@@ -17,8 +17,8 @@ public class PorkConsumeEvent {
 
     public static void init(){
 
-        AutoConfig.register(ServerModConfig.class, JanksonConfigSerializer::new);
-        ServerModConfig config = AutoConfig.getConfigHolder(ServerModConfig.class).getConfig();
+        AutoConfig.register(ModConfig.class, JanksonConfigSerializer::new);
+        ModConfig config = AutoConfig.getConfigHolder(ModConfig.class).getConfig();
 
         UseItemCallback.EVENT.register((player, world, hand) -> {
             if(!world.isClient){
