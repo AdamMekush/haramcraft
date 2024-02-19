@@ -1,0 +1,7 @@
+{
+  "text.autoconfig.haramcraft.title": "Haram Craft",
+  "text.autoconfig.haramcraft.option.isEnableDeath": "Увімкнути смерть",
+  "text.autoconfig.haramcraft.option.isEnableExplosion": "Увімкнути вибух",
+  "text.autoconfig.haramcraft.option.isEnableTeleportation": "Увімкнути телепортацію",
+  "text.autoconfig.haramcraft.option.explosionPower": "Сила вибуху"
+}

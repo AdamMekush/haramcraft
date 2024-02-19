@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "haramcraft",
+  "version": "${version}",
+  "name": "HaramCraft",
+  "description": "Strictly prohibit the use of pork!",
+  "authors": [
+    "Slide_AM",
+    "cocoturtlez"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/project/haramcraft",
+    "sources": "https://github.com/AdamMekush/haramcraft",
+    "issues": "https://github.com/AdamMekush/haramcraft/issues"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/examplemod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.haramcraft.fabric.ExampleModFabric"
+    ],
+    "modmenu": [
+      "me.haramcraft.fabric.config.ModMenuIntegration"
+    ]
+  },
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.20.1",
+    "architectury": ">=9.1.12"
+  }
+}

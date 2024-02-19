@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+issueTrackerURL = "https://github.com/AdamMekush/haramcraft/issues"
+license = "CC0-1.0"
+
+[[mods]]
+modId = "haramcraft"
+version = "${version}"
+displayName = "HaramCraft"
+authors = "Slide_AM, cocoturtlez"
+description = '''
+Strictly prohibit the use of pork!
+'''
+logoFile = "icon.png"
+
+[[dependencies.examplemod]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.examplemod]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.examplemod]]
+modId = "architectury"
+mandatory = true
+versionRange = "[9.1.12,)"
+ordering = "AFTER"
+side = "BOTH"
