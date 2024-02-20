@@ -1,22 +1,28 @@
 package me.haramcraft.forge.config;
 
+import me.haramcraft.HaramCraft;
 import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.autoconfig.annotation.ConfigEntry;
-import me.haramcraft.ExampleMod;
 
-@Config(name = ExampleMod.MOD_ID)
+@Config(name = HaramCraft.MOD_ID)
 public class ModConfig implements ConfigData {
-    @ConfigEntry.Gui.Tooltip
-    public boolean isEnableDeath = true;
 
-    @ConfigEntry.Gui.Tooltip
-    public boolean isEnableExplosion = false;
+    public boolean isDeathEnabled = true;
 
-    @ConfigEntry.Gui.Tooltip
-    public boolean isEnableTeleportation = false;
+    @ConfigEntry.Gui.CollapsibleObject
+    InnerStuff fun = new InnerStuff();
 
-    @ConfigEntry.Gui.Tooltip
-    public float explosionPower = 5;
+    @ConfigEntry.Gui.Excluded
+    InnerStuff invisibleStuff = new InnerStuff();
+
+    static class InnerStuff {
+
+        public boolean isExplosionEnabled = false;
+
+        public boolean isTeleportationEnabled = false;
+
+        public float explosionPower = 5;
+    }
 
 }

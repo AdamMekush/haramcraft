@@ -18,7 +18,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "me.haramcraft.fabric.ExampleModFabric"
+      "me.haramcraft.fabric.HaramCraftFabric"
     ],
     "modmenu": [
       "me.haramcraft.fabric.config.ModMenuIntegration"
