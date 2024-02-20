@@ -92,7 +92,7 @@ modrinth {
     versionType = "release" // This is the default -- can also be `beta` or `alpha`
     uploadFile = remapJar // With Loom, this MUST be set to `remapJar` instead of `jar`!
     gameVersions = ["1.20.1", "1.20.2", "1.20.4"] // Must be an array, even with only one version
-    loaders = ["forge", "neoforge"]
+    loaders = ["forge"]
     // Must also be an array - no need to specify this if you're using Loom or ForgeGradle
     dependencies { // A special DSL for creating dependencies
         // scope.type
